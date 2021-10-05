@@ -1,0 +1,15 @@
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\Debug\netcoreapp3.1\App.Core.Entities.deps.json
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\Debug\netcoreapp3.1\App.Core.Entities.dll
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\Debug\netcoreapp3.1\App.Core.Entities.pdb
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\obj\Debug\netcoreapp3.1\App.Core.Entities.AssemblyInfoInputs.cache
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\obj\Debug\netcoreapp3.1\App.Core.Entities.AssemblyInfo.cs
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\obj\Debug\netcoreapp3.1\App.Core.Entities.csproj.CoreCompileInputs.cache
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\obj\Debug\netcoreapp3.1\App.Core.Entities.dll
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\obj\Debug\netcoreapp3.1\App.Core.Entities.pdb
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\netcoreapp3.1\App.Core.Entities.deps.json
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\netcoreapp3.1\App.Core.Entities.dll
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\netcoreapp3.1\App.Core.Entities.pdb
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\obj\Debug\netcoreapp3.1\App.Core.Entities.csproj.AssemblyReference.cache
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\netcoreapp3.1\App.Core.Utilities.dll
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\bin\netcoreapp3.1\App.Core.Utilities.pdb
+E:\MonaMedia\AppCore\App.Core\App.Core.Entities\obj\Debug\netcoreapp3.1\App.Core.Entities.csproj.CopyComplete
