@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bin\App.Core.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="App.Core.Entities">
+      <HintPath>..\App.Core.Entities\bin\netcoreapp3.1\App.Core.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Extensions">
+      <HintPath>..\App.Core.Extensions\bin\netcoreapp3.1\App.Core.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Interface">
+      <HintPath>..\App.Core.Interface\bin\netcoreapp3.1\App.Core.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Models">
+      <HintPath>..\App.Core.Models\bin\netcoreapp3.1\App.Core.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Service">
+      <HintPath>..\App.Core.Service\bin\netcoreapp3.1\App.Core.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Utilities">
+      <HintPath>..\App.Core.Utilities\bin\netcoreapp3.1\App.Core.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Configuration\" />
+  </ItemGroup>
+
+
+</Project>
