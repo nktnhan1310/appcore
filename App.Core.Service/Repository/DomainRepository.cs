@@ -13,6 +13,10 @@ using App.Core.Interface.DbContext;
 using App.Core.Utilities;
 using App.Core.Service.DbExtensions;
 using Microsoft.Data.SqlClient;
+<<<<<<< HEAD
+=======
+using App.Core.Extensions;
+>>>>>>> Edit_Repository
 //using System.Data.SqlClient;
 
 namespace App.Core.Service
@@ -39,6 +43,19 @@ namespace App.Core.Service
 
         public virtual void Create(T entity)
         {
+<<<<<<< HEAD
+=======
+            entity.Created = DateTime.Now;
+            if (string.IsNullOrEmpty(entity.CreatedBy))
+            {
+                var User = LoginContext.Instance.CurrentUser;
+                if (User != null)
+                {
+                    entity.CreatedBy = User.UserName;
+                }
+
+            }
+>>>>>>> Edit_Repository
             Context.Set<T>().Add(entity);
         }
 
@@ -64,6 +81,19 @@ namespace App.Core.Service
         public virtual void Update(T entity)
         {
             //Context.Entry(entity).State = EntityState.Modified;
+<<<<<<< HEAD
+=======
+            entity.Updated = DateTime.Now;
+            if (string.IsNullOrEmpty(entity.UpdatedBy))
+            {
+                var User = LoginContext.Instance.CurrentUser;
+                if (User != null)
+                {
+                    entity.UpdatedBy = User.UserName;
+                }
+
+            }
+>>>>>>> Edit_Repository
             Context.Set<T>().Update(entity);
         }
 

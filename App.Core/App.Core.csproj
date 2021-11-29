@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+<<<<<<< HEAD
     <OutputPath>bin\</OutputPath>
+=======
+    <OutputPath>E:\MonaMedia\AppCoreGit\Libs</OutputPath>
+>>>>>>> Edit_Repository
     <DocumentationFile>bin\App.Core.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
@@ -21,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Reference Include="App.Core.Entities">
       <HintPath>..\App.Core.Entities\bin\netcoreapp3.1\App.Core.Entities.dll</HintPath>
     </Reference>
@@ -45,5 +50,31 @@
     <Folder Include="Controllers\Configuration\" />
   </ItemGroup>
 
+=======
+    <Folder Include="Controllers\Configuration\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="App.Core.Entities">
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Extensions">
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Interface">
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Models">
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Service">
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Core.Utilities">
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+>>>>>>> Edit_Repository
 
 </Project>
