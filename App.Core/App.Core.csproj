@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Configuration\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="App.Core.Entities">
       <HintPath>..\App.Core.Entities\bin\netcoreapp3.1\App.Core.Entities.dll</HintPath>
     </Reference>
@@ -43,6 +39,10 @@
     <Reference Include="App.Core.Utilities">
       <HintPath>..\App.Core.Utilities\bin\netcoreapp3.1\App.Core.Utilities.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Configuration\" />
   </ItemGroup>
 
 
