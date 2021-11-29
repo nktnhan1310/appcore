@@ -37,20 +37,15 @@ namespace App.Core.Interface
         Task<IList<E>> GetAllAsync();
         Task<E> GetByIdAsync(int id, Expression<Func<E, E>> select);
         Task<IList<E>> GetAllAsync(Expression<Func<E, E>> select);
-        Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select);
-        Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expression, Expression<Func<E, E>> select);
-        Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression);
-        Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expression);
-        Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, bool useProjectTo);
-        Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expression, bool useProjectTo);
+        Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select, string orderBy = "");
+        Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expression, Expression<Func<E, E>> select, string orderBy = "");
+        Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, string orderBy = "");
+        Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expression, string orderBy = "");
 
-        Task<E> GetSingleAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select);
-        Task<E> GetSingleAsync(Expression<Func<E, bool>> expression);
-        Task<E> GetSingleAsync(Expression<Func<E, bool>> expression, bool useProjectTo);
-        Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, Expression<Func<E, E>> select);
-        Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions);
-        Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, bool useProjectTo);
-
+        Task<E> GetSingleAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select, string orderBy = "");
+        Task<E> GetSingleAsync(Expression<Func<E, bool>> expression, string orderBy = "");
+        Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, Expression<Func<E, E>> select, string orderBy = "");
+        Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, string orderBy = "");
 
         Task<bool> UpdateAsync(E item);
         Task<bool> UpdateAsync(IList<E> items);
