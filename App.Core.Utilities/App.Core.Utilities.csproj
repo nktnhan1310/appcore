@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+<<<<<<< HEAD
     <OutputPath>bin\</OutputPath>
+=======
+    <OutputPath>E:\MonaMedia\AppCoreGit\Libs\</OutputPath>
+>>>>>>> Edit_Repository
   </PropertyGroup>
 
   <ItemGroup>
