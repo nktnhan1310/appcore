@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>E:\MonaMedia\AppCoreGit\Libs</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,16 +26,16 @@
 
   <ItemGroup>
     <Reference Include="App.Core.Entities">
-      <HintPath>..\App.Core.Entities\bin\netcoreapp3.1\App.Core.Entities.dll</HintPath>
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Entities.dll</HintPath>
     </Reference>
     <Reference Include="App.Core.Extensions">
-      <HintPath>..\App.Core.Extensions\bin\netcoreapp3.1\App.Core.Extensions.dll</HintPath>
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="App.Core.Interface">
-      <HintPath>..\App.Core.Interface\bin\netcoreapp3.1\App.Core.Interface.dll</HintPath>
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Interface.dll</HintPath>
     </Reference>
     <Reference Include="App.Core.Utilities">
-      <HintPath>..\App.Core.Utilities\bin\netcoreapp3.1\App.Core.Utilities.dll</HintPath>
+      <HintPath>$(SolutionDir)\Libs\netcoreapp3.1\App.Core.Utilities.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using App.Core.Models.AuthModel;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 
@@ -82,5 +81,17 @@ namespace App.Core.Extensions
         /// Ảnh đại diện của user
         /// </summary>
         public string Avatar { get; set; }
+    }
+
+    public class RoleModel
+    {
+        /// <summary>
+        /// Tên chức năng (menu)
+        /// </summary>
+        public string RoleName { get; set; }
+        /// <summary>
+        /// Quyền của chức năng
+        /// </summary>
+        public bool IsView { get; set; }
     }
 }
