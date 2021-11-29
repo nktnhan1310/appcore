@@ -1,8 +1,4 @@
 ﻿using App.Core.Interface.Services;
-<<<<<<< HEAD
-using App.Core.Models.AuthModel;
-=======
->>>>>>> Edit_Repository
 using App.Core.Utilities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

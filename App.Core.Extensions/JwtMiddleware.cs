@@ -1,9 +1,5 @@
 ﻿using App.Core.Interface.Services;
 using App.Core.Interface.Services.Auth;
-<<<<<<< HEAD
-using App.Core.Models.AuthModel;
-=======
->>>>>>> Edit_Repository
 using App.Core.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;

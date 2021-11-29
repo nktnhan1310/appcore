@@ -10,3 +10,9 @@ E:\MonaMedia\AppCore\App.Core\App.Core.Utilities\obj\Debug\netcoreapp3.1\App.Cor
 E:\MonaMedia\AppCore\App.Core\App.Core.Utilities\bin\netcoreapp3.1\App.Core.Utilities.deps.json
 E:\MonaMedia\AppCore\App.Core\App.Core.Utilities\bin\netcoreapp3.1\App.Core.Utilities.dll
 E:\MonaMedia\AppCore\App.Core\App.Core.Utilities\bin\netcoreapp3.1\App.Core.Utilities.pdb
+E:\MonaMedia\AppCoreGit\Libs\netcoreapp3.1\App.Core.Utilities.deps.json
+E:\MonaMedia\AppCoreGit\Libs\netcoreapp3.1\App.Core.Utilities.dll
+E:\MonaMedia\AppCoreGit\Libs\netcoreapp3.1\App.Core.Utilities.pdb
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Utilities.deps.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Utilities.dll
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Utilities.pdb

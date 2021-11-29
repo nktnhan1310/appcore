@@ -18,3 +18,8 @@ E:\MonaMedia\AppCore\App.Core\App.Core.Interface\bin\netcoreapp3.1\App.Core.Enti
 E:\MonaMedia\AppCore\App.Core\App.Core.Interface\bin\netcoreapp3.1\App.Core.Utilities.pdb
 E:\MonaMedia\AppCore\App.Core\App.Core.Interface\obj\Debug\netcoreapp3.1\App.Core.Interface.csproj.CopyComplete
 E:\MonaMedia\AppCore\App.Core\App.Core.Interface\obj\Debug\netcoreapp3.1\App.Core.Interface.genruntimeconfig.cache
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Interface.deps.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Interface.runtimeconfig.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Interface.runtimeconfig.dev.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Interface.dll
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Interface.pdb

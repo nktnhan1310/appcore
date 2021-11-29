@@ -15,3 +15,6 @@ E:\MonaMedia\AppCore\App.Core\App.Core.Models\bin\netcoreapp3.1\App.Core.Utiliti
 E:\MonaMedia\AppCore\App.Core\App.Core.Models\bin\netcoreapp3.1\App.Core.Entities.pdb
 E:\MonaMedia\AppCore\App.Core\App.Core.Models\bin\netcoreapp3.1\App.Core.Utilities.pdb
 E:\MonaMedia\AppCore\App.Core\App.Core.Models\obj\Debug\netcoreapp3.1\App.Core.Models.csproj.CopyComplete
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Models.deps.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Models.dll
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.Models.pdb

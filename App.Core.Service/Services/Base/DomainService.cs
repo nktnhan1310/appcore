@@ -10,10 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-<<<<<<< HEAD
-=======
 using System.Linq.Dynamic.Core;
->>>>>>> Edit_Repository
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
@@ -387,10 +384,6 @@ namespace App.Core.Service
 
         }
 
-<<<<<<< HEAD
-        public async Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select)
-        {
-=======
         public async Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select, string orderBy = "")
         {
             if (!string.IsNullOrEmpty(orderBy))
@@ -400,7 +393,6 @@ namespace App.Core.Service
                 .Select(select)
                 .OrderBy(orderBy)
                 .ToListAsync();
->>>>>>> Edit_Repository
             return await unitOfWork.Repository<E>()
                  .GetQueryable()
                  .Where(expression)
@@ -408,30 +400,7 @@ namespace App.Core.Service
                  .ToListAsync();
         }
 
-<<<<<<< HEAD
-        public async Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression)
-        {
-            return await unitOfWork.Repository<E>()
-                .GetQueryable()
-                .Where(expression)
-                .ToListAsync();
-        }
 
-        
-
-
-        public async Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, bool useProjectTo)
-        {
-            if (useProjectTo)
-                return await unitOfWork.Repository<E>()
-                .GetQueryable()
-                .ProjectTo<E>(mapper.ConfigurationProvider)
-                .Where(expression)
-                .ToListAsync();
-            return await unitOfWork.Repository<E>()
-                .GetQueryable()
-                .ProjectTo<E>(mapper.ConfigurationProvider)
-=======
         public async Task<IList<E>> GetAsync(Expression<Func<E, bool>> expression, string orderBy = "")
         {
             if (!string.IsNullOrEmpty(orderBy))
@@ -442,41 +411,10 @@ namespace App.Core.Service
                 .ToListAsync();
             return await unitOfWork.Repository<E>()
                 .GetQueryable()
->>>>>>> Edit_Repository
                 .Where(expression)
                 .ToListAsync();
         }
 
-<<<<<<< HEAD
-        public async Task<E> GetSingleAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select)
-        {
-            return await unitOfWork.Repository<E>()
-                 .GetQueryable()
-                 .Where(expression)
-                 .Select(select)
-                 .FirstOrDefaultAsync();
-        }
-
-        public async Task<E> GetSingleAsync(Expression<Func<E, bool>> expression)
-        {
-            return await unitOfWork.Repository<E>()
-                .GetQueryable()
-                .Where(expression)
-                .FirstOrDefaultAsync();
-        }
-
-        public async Task<E> GetSingleAsync(Expression<Func<E, bool>> expression, bool useProjectTo)
-        {
-            if (useProjectTo)
-                return await unitOfWork.Repository<E>()
-                .GetQueryable()
-                .ProjectTo<E>(mapper.ConfigurationProvider)
-                .Where(expression)
-                .FirstOrDefaultAsync();
-            return await unitOfWork.Repository<E>()
-                .GetQueryable()
-                .ProjectTo<E>(mapper.ConfigurationProvider)
-=======
         public async Task<E> GetSingleAsync(Expression<Func<E, bool>> expression, Expression<Func<E, E>> select, string orderBy = "")
         {
             if(!string.IsNullOrEmpty(orderBy))
@@ -503,7 +441,6 @@ namespace App.Core.Service
                 .FirstOrDefaultAsync();
             return await unitOfWork.Repository<E>()
                 .GetQueryable()
->>>>>>> Edit_Repository
                 .Where(expression)
                 .FirstOrDefaultAsync();
         }
@@ -558,11 +495,8 @@ namespace App.Core.Service
             return queryable.ToList();
         }
 
-<<<<<<< HEAD
-        public async Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expressions, Expression<Func<E, E>> select)
-=======
+
         public async Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expressions, Expression<Func<E, E>> select, string orderBy = "")
->>>>>>> Edit_Repository
         {
             var queryable = Queryable.Where(e => !e.Deleted);
             foreach (var expression in expressions)
@@ -573,25 +507,16 @@ namespace App.Core.Service
             {
                 queryable = queryable.Select(select);
             }
-<<<<<<< HEAD
-            return await queryable.ToListAsync();
-        }
-
-        public async Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expressions)
-=======
-            if(!string.IsNullOrEmpty(orderBy)) return await queryable.OrderBy(orderBy).ToListAsync();
             return await queryable.ToListAsync();
         }
 
         public async Task<IList<E>> GetAsync(Expression<Func<E, bool>>[] expressions, string orderBy = "")
->>>>>>> Edit_Repository
         {
             var queryable = Queryable.Where(e => !e.Deleted);
             foreach (var expression in expressions)
             {
                 queryable = queryable.Where(expression);
             }
-<<<<<<< HEAD
 
             return await queryable.ToListAsync();
         }
@@ -610,14 +535,8 @@ namespace App.Core.Service
             return await queryable.ToListAsync();
         }
 
-        public async Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, Expression<Func<E, E>> select)
-=======
-            if (!string.IsNullOrEmpty(orderBy)) return await queryable.OrderBy(orderBy).ToListAsync();
-            return await queryable.ToListAsync();
-        }
 
         public async Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, Expression<Func<E, E>> select, string orderBy = "")
->>>>>>> Edit_Repository
         {
             var queryable = Queryable.Where(e => !e.Deleted);
             foreach (var expression in expressions)
@@ -628,43 +547,20 @@ namespace App.Core.Service
             {
                 queryable = queryable.Select(select);
             }
-<<<<<<< HEAD
+            if (!string.IsNullOrEmpty(orderBy)) return await queryable.OrderBy(orderBy).FirstOrDefaultAsync();
             return await queryable.FirstOrDefaultAsync();
         }
 
-        public async Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions)
-=======
-            if(!string.IsNullOrEmpty(orderBy)) return await queryable.OrderBy(orderBy).FirstOrDefaultAsync();
-            return await queryable.FirstOrDefaultAsync();
-        }
+
 
         public async Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, string orderBy = "")
->>>>>>> Edit_Repository
         {
             var queryable = Queryable.Where(e => !e.Deleted);
             foreach (var expression in expressions)
             {
                 queryable = queryable.Where(expression);
             }
-<<<<<<< HEAD
-
-            return await queryable.FirstOrDefaultAsync();
-        }
-
-        public async Task<E> GetSingleAsync(Expression<Func<E, bool>>[] expressions, bool useProjectTo)
-        {
-            var queryable = Queryable.Where(e => !e.Deleted);
-            foreach (var expression in expressions)
-            {
-                queryable = queryable.Where(expression);
-            }
-            if (useProjectTo)
-            {
-                queryable = queryable.ProjectTo<E>(mapper.ConfigurationProvider);
-            }
-=======
             if (!string.IsNullOrEmpty(orderBy)) return await queryable.OrderBy(orderBy).FirstOrDefaultAsync();
->>>>>>> Edit_Repository
             return await queryable.FirstOrDefaultAsync();
         }
 

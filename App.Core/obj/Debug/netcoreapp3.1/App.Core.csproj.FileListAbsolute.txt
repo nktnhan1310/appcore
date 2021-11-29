@@ -52,3 +52,12 @@ E:\MonaMedia\AppCore\App.Core\App.Core\bin\netcoreapp3.1\Swashbuckle.AspNetCore.
 E:\MonaMedia\AppCore\App.Core\App.Core\bin\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\MonaMedia\AppCore\App.Core\App.Core\bin\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\MonaMedia\AppCore\App.Core\App.Core\bin\netcoreapp3.1\App.Core.xml
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\appsettings.Development.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\appsettings.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.exe
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.deps.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.runtimeconfig.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.runtimeconfig.dev.json
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.dll
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.pdb
+E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\netcoreapp3.1\App.Core.xml

@@ -1,19 +1,12 @@
-<<<<<<< HEAD
-<Project Sdk="Microsoft.NET.Sdk">
-=======
 ﻿<Project Sdk="Microsoft.NET.Sdk">
->>>>>>> Edit_Repository
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-<<<<<<< HEAD
-    <OutputPath>bin\</OutputPath>
-=======
-    <OutputPath>E:\MonaMedia\AppCoreGit\Libs</OutputPath>
->>>>>>> Edit_Repository
+
+    <OutputPath>E:\MonaMedia\AppCore\App.Core\Libs\netcoreapp3.1\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,20 +21,10 @@
 
   <ItemGroup>
     <Reference Include="App.Core.Interface">
-<<<<<<< HEAD
-      <HintPath>..\App.Core.Interface\bin\netcoreapp3.1\App.Core.Interface.dll</HintPath>
-    </Reference>
-    <Reference Include="App.Core.Models">
-      <HintPath>..\App.Core.Models\bin\netcoreapp3.1\App.Core.Models.dll</HintPath>
-    </Reference>
-    <Reference Include="App.Core.Utilities">
-      <HintPath>..\App.Core.Utilities\bin\netcoreapp3.1\App.Core.Utilities.dll</HintPath>
-=======
       <HintPath>..\Libs\netcoreapp3.1\App.Core.Interface.dll</HintPath>
     </Reference>
     <Reference Include="App.Core.Utilities">
       <HintPath>..\Libs\netcoreapp3.1\App.Core.Utilities.dll</HintPath>
->>>>>>> Edit_Repository
     </Reference>
   </ItemGroup>
 
