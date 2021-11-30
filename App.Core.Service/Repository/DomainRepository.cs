@@ -13,6 +13,7 @@ using App.Core.Interface.DbContext;
 using App.Core.Utilities;
 using App.Core.Service.DbExtensions;
 using Microsoft.Data.SqlClient;
+using App.Core.Extensions;
 //using System.Data.SqlClient;
 
 namespace App.Core.Service
