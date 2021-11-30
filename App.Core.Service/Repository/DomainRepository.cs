@@ -43,12 +43,8 @@ namespace App.Core.Service
             entity.Created = DateTime.Now;
             if (string.IsNullOrEmpty(entity.CreatedBy))
             {
-                var User = LoginContext.Instance.CurrentUser;
-                if (User != null)
-                {
-                    entity.CreatedBy = User.UserName;
-                }
-
+                if (LoginContext.Instance.CurrentUser != null)
+                    entity.CreatedBy = LoginContext.Instance.CurrentUser.UserName;
             }
             Context.Set<T>().Add(entity);
         }
@@ -78,12 +74,8 @@ namespace App.Core.Service
             entity.Updated = DateTime.Now;
             if (string.IsNullOrEmpty(entity.UpdatedBy))
             {
-                var User = LoginContext.Instance.CurrentUser;
-                if (User != null)
-                {
-                    entity.UpdatedBy = User.UserName;
-                }
-
+                if (LoginContext.Instance.CurrentUser != null)
+                    entity.UpdatedBy = LoginContext.Instance.CurrentUser.UserName;
             }
             Context.Set<T>().Update(entity);
         }
@@ -143,7 +135,7 @@ namespace App.Core.Service
 
         public virtual IQueryable<T> GetQueryable()
         {
-            return Context.Set<T>().Where(e => !e.Deleted);
+            return Context.Set<T>();
         }
 
         public virtual void LoadReference(T item, params string[] property)
@@ -202,8 +194,6 @@ namespace App.Core.Service
                 }
             });
         }
-
-
 
         public async Task<object> ExcuteStoreGetValue(string commandText, SqlParameter[] sqlParameters, string outputName)
         {
