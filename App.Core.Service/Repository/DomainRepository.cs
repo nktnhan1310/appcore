@@ -135,7 +135,7 @@ namespace App.Core.Service
 
         public virtual IQueryable<T> GetQueryable()
         {
-            return Context.Set<T>().Where(e => !e.Deleted);
+            return Context.Set<T>();
         }
 
         public virtual void LoadReference(T item, params string[] property)
@@ -194,8 +194,6 @@ namespace App.Core.Service
                 }
             });
         }
-
-
 
         public async Task<object> ExcuteStoreGetValue(string commandText, SqlParameter[] sqlParameters, string outputName)
         {
