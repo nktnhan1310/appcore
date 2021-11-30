@@ -1,5 +1,4 @@
 ﻿using App.Core.Interface.Services;
-using App.Core.Models.AuthModel;
 using App.Core.Utilities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

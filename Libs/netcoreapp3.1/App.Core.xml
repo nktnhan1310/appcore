@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App.Core</name>
+    </assembly>
+    <members>
+        <member name="M:App.Core.Controllers.AuthCoreController.LoginAsync(App.Core.Models.LoginModel)">
+            <summary>
+            Đăng nhập hệ thống
+            </summary>
+            <param name="loginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.SendOTP(System.String,System.String)">
+            <summary>
+            Kiểm tra mã OTP đăng nhập hệ thống
+            </summary>
+            <param name="phoneNumber"></param>
+            <param name="otpValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.SendOTPGetPassword(System.String,System.String)">
+            <summary>
+            Kiểm tra OTP để đổi mật khẩu cho điện thoại
+            </summary>
+            <param name="phoneNumber"></param>
+            <param name="otpValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.SendOTPGetPasswordEmail(System.String,System.String)">
+            <summary>
+            Kiểm tra OTP để đổi mật khẩu cho Email
+            </summary>
+            <param name="email"></param>
+            <param name="otpValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.GenerateOTPCode(System.String)">
+            <summary>
+            Gửi mã OTP theo sdt có trong hệ thống
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.GenerateOTPCodeEmail(System.String)">
+            <summary>
+            Tạo OTP gửi qua email
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.Register(App.Core.Models.RegisterModel)">
+            <summary>
+            Đăng ký
+            </summary>
+            <param name="register"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.ChangePassword(System.Int32,App.Core.Models.ChangePasswordModel)">
+            <summary>
+            Đổi mật khẩu
+            </summary>
+            <param name="userId"></param>
+            <param name="changePasswordModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.ForgotPassword(System.String)">
+            <summary>
+            Quên mật khẩu
+            <para>Gửi mật khẩu mới qua Email nếu username là email</para>
+            <para>Gửi mật khẩu mới qua SMS nếu username là phone</para>
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.Logout">
+            <summary>
+            Đăng xuất
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.AuthCoreController.GenerateJwtToken(App.Core.Models.AuthModel.UserCoreModel,System.Boolean)">
+            <summary>
+            Tạo token từ thông tin user
+            </summary>
+            <param name="user"></param>
+            <param name="isConfirmOTP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.PermitObjectCoreController.GetCatalogueController">
+            <summary>
+            Lấy thông tin những chức năng cần được phân quyền
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.PermitObjectCoreController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin chức năng theo Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.PermitObjectCoreController.AddItem(App.Core.Models.AuthModel.RequestModel.RequestPermitObjectCoreModel)">
+            <summary>
+            Thêm mới chức năng
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.PermitObjectCoreController.UpdateItem(App.Core.Models.AuthModel.RequestModel.RequestPermitObjectCoreModel)">
+            <summary>
+            Cập nhật thông tin chức năng
+            </summary>
+            <param name="id"></param>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserCoreController.GetUserInfos(System.String)">
+            <summary>
+            Lấy thông tin danh sách user
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserCoreController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserCoreController.UpdateItem(App.Core.Models.AuthModel.RequestModel.RequestUserCoreModel)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserCoreController.AddItem(App.Core.Models.AuthModel.RequestModel.RequestUserCoreModel)">
+            <summary>
+            Thêm mới user
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserCoreController.Get(App.Core.Entities.BaseSearchUser)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserGroupCoreController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin nhóm theo Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserGroupCoreController.GetPermissionCatalogue">
+            <summary>
+            Lấy danh sách quyền
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Auth.UserGroupCoreController.GetUserInGroups(App.Core.Entities.BaseSearchUserInGroup)">
+            <summary>
+            Lấy danh sách phân trang người dùng thuộc nhóm
+            </summary>
+            <param name="searchUserInGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.AddItem(`2)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.UpdateItem(`2)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.DeleteItem(System.Int32)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.Get(`3)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.DownloadTemplateImport(System.String)">
+            <summary>
+            Down load template file import
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.DownloadImportFileResult(System.String)">
+            <summary>
+            Tải về file kết quả sau khi import
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseCatalogueController`4.ImportTemplateFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Import file danh mục
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.AddItem(`2)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.UpdateItem(`2)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="id"></param>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.DeleteItem(System.Int32)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.Get(`3)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.UploadFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload Single File
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.UploadFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            Upload Multiple File
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.BaseController`4.GetPermission">
+            <summary>
+            Lấy thông tin quyền của chức năng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Catalogue.CatalogueCoreController.GetCountryCatalogue(System.String)">
+            <summary>
+            Lấy danh sách quốc gia
+            </summary>
+            <param name="searchContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Catalogue.CatalogueCoreController.GetCityCatalogue(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Lấy danh sách thành phố
+            </summary>
+            <param name="countryId"></param>
+            <param name="searchContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Catalogue.CatalogueCoreController.GetDistrictCatalogue(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Lấy danh sách quận
+            </summary>
+            <param name="cityId"></param>
+            <param name="searchContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Catalogue.CatalogueCoreController.GetWardCatalogue(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <summary>
+            Lấy danh sách phường
+            </summary>
+            <param name="cityId"></param>
+            <param name="districtid"></param>
+            <param name="searchContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Core.Controllers.Catalogue.CatalogueCoreController.GetNationCatalogue(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Lấy danh sách dân tộc
+            </summary>
+            <param name="countryId"></param>
+            <param name="searchContent"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

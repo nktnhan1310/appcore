@@ -1,6 +1,5 @@
 ﻿using App.Core.Interface.Services;
 using App.Core.Interface.Services.Auth;
-using App.Core.Models.AuthModel;
 using App.Core.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
